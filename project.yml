@@ -1,0 +1,8 @@
+microservices:
+  kube-etcd-sentinel:
+    startup: yes
+    always: yes
+    withoutKanban: yes
+    serviceAccount: controller-serviceaccount
+    env:
+      MY_NODE_NAME: 自身のデバイス名
